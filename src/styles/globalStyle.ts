@@ -24,6 +24,13 @@ export default createGlobalStyle`
     a{
         text-decoration: none;
         color: ${({ theme }) => theme.DARK.COLORS.WHITE};
+
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            color: ${({theme}) => theme.DARK.COLORS.CYAN};
+            opacity: .8;
+        }
     }
 
     button{
