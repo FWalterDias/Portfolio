@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Projects } from "./pages/Projects";
-import { Contacts } from "./pages/Contact";
+import { Contact } from "./pages/Contact";
 import { App } from "./pages/Home";
 import { Main } from "./pages/Main";
 import { ProjectPage } from "./pages/ProjectPage";
@@ -21,7 +21,9 @@ export function MainRouts() {
         <Route path=":id" element={<ProjectPage />} />
       </Route>
 
-      <Route path="/contact" element={<Contacts />} />
+      <Route path="/contact" element={<App />} >
+        <Route path="" element={<Contact />} />
+      </Route>
 
       <Route path="*" element={<NotFound />} />
     </Routes>

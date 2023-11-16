@@ -1,4 +1,4 @@
-export function Contacts(){
+export function Contact(){
     return(
         <h1>
             Contact
