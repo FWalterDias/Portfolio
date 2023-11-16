@@ -13,7 +13,7 @@ export function MainRouts() {
       <Route path="/" element={<Navigate to="/home" />} />
 
       <Route path="/home" element={<App />} >
-        <Route element={<Main />} />
+        <Route path="" element={<Main />} />
       </Route>
 
       <Route path="/projects" element={<App />} >

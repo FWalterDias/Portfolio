@@ -1,7 +1,10 @@
-export function Main(){
-    return(
-        <h1>
-            Contact
-        </h1>
+import { SectionIntroduction } from "./SectionIntroduction";
+import { ContainerMain } from "./styles";
+
+export function Main() {
+    return (
+        <ContainerMain>
+            <SectionIntroduction />
+        </ContainerMain>
     )
 }

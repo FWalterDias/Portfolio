@@ -34,6 +34,17 @@ export default createGlobalStyle`
     }
 
     button{
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            color: ${({theme}) => theme.DARK.COLORS.WHITE};
+            background-color: ${({theme}) => theme.DARK.COLORS.CYAN};
+            font-weight: 700;
+        }
+    }
+
+    button{
         border: none;
     }
 

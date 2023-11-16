@@ -8,3 +8,9 @@ export type ModalProps = {
 export type ModalProviderProps = {
     children: ReactNode
 }
+
+export type ButtonProps = {
+    text: string
+    type: "normal" | "introduction"
+    width: "small" | "biggest"
+}
