@@ -9,5 +9,9 @@ export default createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
     }
 
-    background-color: red;
+    body{
+        background: ${({theme}) => theme.DARK.COLORS.BACKGROUND_PAGE} no-repeat;
+        min-height: 100vh;
+    }
+    
 `
