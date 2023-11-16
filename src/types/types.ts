@@ -11,8 +11,9 @@ export type ModalProviderProps = {
 
 export type ButtonProps = {
     text: string
-    type: "normal" | "introduction"
+    type: "normal" | "transparent"
     width: "small" | "biggest"
+    img?: string
 }
 
 export type TechnologiesProps = {

@@ -3,13 +3,15 @@ import styled from "styled-components";
 export const ContainerButton = styled.button`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     height: 5rem;
 
-    background-color: ${({theme}) => theme.DARK.COLORS.WHITE};
+    background-color: ${({ theme }) => theme.DARK.COLORS.WHITE};
 
-    color: ${({theme}) => theme.DARK.COLORS.DARK_DARK_BLUE};
+    border-radius: .5rem;
+
+    color: ${({ theme }) => theme.DARK.COLORS.DARK_DARK_BLUE};
     text-align: center;
     font-family: "Roboto mono";
     font-size: 1.2rem;
@@ -25,14 +27,14 @@ export const ContainerButton = styled.button`
         width: 20rem;
     }
 
-    &.introduction{
-        color: ${({theme}) => theme.DARK.COLORS.WHITE};
-        border: 1px solid ${({theme}) => theme.DARK.COLORS.WHITE}; 
+    &.transparent{
+        color: ${({ theme }) => theme.DARK.COLORS.WHITE};
+        border: 1px solid ${({ theme }) => theme.DARK.COLORS.WHITE}; 
         background: rgba(255, 255, 255, 0.00);
 
         &:hover{
             border: none;
-            background-color: ${({theme}) => theme.DARK.COLORS.CYAN};
+            background-color: ${({ theme }) => theme.DARK.COLORS.CYAN};
         }
     }
 `

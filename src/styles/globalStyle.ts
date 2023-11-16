@@ -42,6 +42,10 @@ export default createGlobalStyle`
             background-color: ${({theme}) => theme.DARK.COLORS.CYAN};
             font-weight: 700;
         }
+
+        &:active{
+            opacity: .5;
+        }
     }
 
     button{

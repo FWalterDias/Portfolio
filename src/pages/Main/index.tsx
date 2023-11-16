@@ -1,3 +1,4 @@
+import { SectionFormations } from "./SectionFormations";
 import { SectionHardSkills } from "./SectionHardSkills/indext";
 import { SectionIntroduction } from "./SectionIntroduction";
 import { ContainerMain } from "./styles";
@@ -7,6 +8,7 @@ export function Main() {
         <ContainerMain>
             <SectionIntroduction />
             <SectionHardSkills />
+            <SectionFormations />
         </ContainerMain>
     )
 }

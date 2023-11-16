@@ -14,7 +14,7 @@ export const SectionTittle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .8rem;
+    gap: 1.5rem;
 
     h1{
         color: ${({ theme }) => theme.DARK.COLORS.WHITE};
