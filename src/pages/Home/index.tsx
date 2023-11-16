@@ -1,7 +1,15 @@
-export function Home(){
-    return(
-        <h1>
-            Home
-        </h1>
+import { Outlet } from "react-router-dom";
+import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
+
+
+
+export function App() {
+    return (
+        <div>
+            <Header />
+            <Outlet />
+            <Footer />
+        </div>
     )
 }

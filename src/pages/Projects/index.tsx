@@ -1,7 +1,7 @@
 export function Projects(){
     return(
         <h1>
-            Projects
+            Projects index
         </h1>
     )
 }
