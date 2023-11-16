@@ -9,13 +9,13 @@ export function Footer(){
         <ContainerFooter>
             <ContainerLinkContatc>
                 <img src={iconGithub} alt="icon-github" />
-                <Link to="">
+                <Link to="https://github.com/FWalterDias" target="_blank">
                     Github
                 </Link>
             </ContainerLinkContatc>
             <ContainerLinkContatc>
                 <img src={iconLinkedin} alt="icon-linkedin" />
-                <Link to="">
+                <Link to="https://www.linkedin.com/in/francisco-walter/" target="_blank">
                     Linkedin
                 </Link>
             </ContainerLinkContatc>

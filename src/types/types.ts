@@ -14,3 +14,14 @@ export type ButtonProps = {
     type: "normal" | "introduction"
     width: "small" | "biggest"
 }
+
+export type TechnologiesProps = {
+    id: number,
+    icon: string,
+    technology: string
+}
+
+export type CardTechnologyProps = {
+    srcIcone: string,
+    textTecnology: string
+}

@@ -8,11 +8,11 @@ export function Header() {
     return (
         <ContainerHeader>
             <ContainerSocialMedias>
-                <Link to="https://github.com/FWalterDias">
+                <Link to="https://github.com/FWalterDias" target="_blank">
                     <img src={iconGitgub} alt="icon-github" />
                 </Link>
 
-                <Link to="https://www.linkedin.com/in/francisco-walter/">
+                <Link to="https://www.linkedin.com/in/francisco-walter/" target="_blank">
                     <img src={iconLinkedin} alt="icon-linkedin" />
                 </Link>
             </ContainerSocialMedias>

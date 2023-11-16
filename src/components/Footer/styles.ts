@@ -6,6 +6,8 @@ export const ContainerFooter = styled.footer`
     gap: 1.8rem;
 
     width: 100%;
+
+    margin-top: 8rem;
 `
 
 export const ContainerLinkContatc = styled.div`
