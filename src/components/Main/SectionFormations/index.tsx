@@ -31,7 +31,7 @@ export function SectionFormations() {
 
             <Button
             text="Curriculo" 
-            type="transparent" 
+            style="transparent" 
             width="small"
             img={iconCurriculo}  />
         </ContainerFormations>

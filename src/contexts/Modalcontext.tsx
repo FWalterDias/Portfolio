@@ -1,8 +1,8 @@
 import { createContext, useState } from "react";
 import { ModalProps, ModalProviderProps } from "../types/types";
 
-const ModalContext = createContext<ModalProps>({
-    modalOpen: false,
+export const ModalContext = createContext<ModalProps>({
+    modalOpen: true,
     setModalOpen: () => { }
 });
 

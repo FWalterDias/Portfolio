@@ -9,7 +9,7 @@ export function ContactSection() {
                 Deseja fazer projetos comigo?
             </h1>
             
-            <Button text="Contato" width="small" type="transparent" />
+            <Button text="Contato" width="small" style="transparent" modal />
         </ContainerContactSection>
     )
 }

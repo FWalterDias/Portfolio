@@ -1,8 +1,9 @@
 import { Outlet } from "react-router-dom";
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
-import { ContainerHome } from "./styles";
 import { ContactSection } from "../../components/ContactSection";
+import { Footer } from "../../components/Footer";
+import { Header } from "../../components/Header";
+import { ContainerHome } from "./styles";
+import Modal from "../../components/Modal";
 
 export function App() {
     return (
@@ -11,6 +12,7 @@ export function App() {
             <Outlet />
             <ContactSection />
             <Footer />
+            <Modal />
         </ContainerHome>
     )
 }

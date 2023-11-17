@@ -75,7 +75,7 @@ export function SectionCourses() {
 
                                     <Button
                                         text="Certificado"
-                                        type="transparent"
+                                        style="transparent"
                                         width="small"
                                         img={imgCertifier} />
                                 </Course>

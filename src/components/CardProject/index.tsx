@@ -18,7 +18,7 @@ export function CardProject({ id, img, title, description }: CardProjectProps) {
 
                 <Button
                     text="Ir para projeto"
-                    type="normal"
+                    style="normal"
                     width="biggest"
                     navigateTo={`/projects/${id}`}
                 />

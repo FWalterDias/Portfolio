@@ -11,10 +11,12 @@ export type ModalProviderProps = {
 
 export type ButtonProps = {
     text: string
-    type: "normal" | "transparent"
+    style: "normal" | "transparent"
     width: "small" | "biggest"
     img?: string
     navigateTo?: string
+    link?: string
+    modal?:boolean
 }
 
 export type TechnologiesProps = {
@@ -66,4 +68,33 @@ export type SectionInfoProjectProps = {
 
 export type SectionPreviwsProps = {
     previews: string[],
+}
+
+export type FormProps = {
+    name: string,
+    email: string,
+    mensage: string
+}
+
+export type FormComponentProps = {
+    formContato: boolean
+}
+
+export type ButtonFormProps = {
+    width: "small" | "biggest"
+}
+
+export type ErrorProps = {
+    showError: boolean,
+    setShowError: (value: boolean) => void
+    errorMensage: string
+    setErrorMensage: (value: string) => void
+}
+
+export type ErrorProviderProps = {
+    children: ReactNode
+}
+
+export type ErrorMensageProps = {
+    text: string
 }
