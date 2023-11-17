@@ -26,7 +26,23 @@ export const ContainerForm = styled.form`
         text-align: center;
         font-size: 2.4rem;
         font-weight: 700;
-        line-height: 130%
+        line-height: 130%;
+
+        &.form-contact{
+            padding-bottom: 1.6rem;
+            border-bottom: solid 1px ${({theme}) => theme.DARK.COLORS.GRAY};
+
+            color: ${({theme}) => theme.DARK.COLORS.WHITE};
+            text-align: center;
+
+            font-family: "Roboto Condensed";
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: .2rem;
+
+            text-transform: uppercase;
+        }
     }
 
     button{
@@ -69,21 +85,5 @@ export const InputWrapper = styled.div`
     textarea{
         resize: none;
         height: 15rem;
-    }
-
-    &.legend-form-contato{
-        padding-bottom: 1.6rem;
-        border-bottom: solid 1px ${({theme}) => theme.DARK.COLORS.GRAY};
-
-        color: ${({theme}) => theme.DARK.COLORS.WHITE};
-        text-align: center;
-
-        font-family: "Roboto Condensed";
-        font-size: 2.4rem;
-        font-style: normal;
-        font-weight: 700;
-        letter-spacing: .2rem;
-
-        text-transform: uppercase;
     }
 `

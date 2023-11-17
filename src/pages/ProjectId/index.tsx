@@ -5,6 +5,7 @@ import { SectionSumary } from "../../components/ProjectId/SectionSumary";
 import { SectionInfoProject } from "../../components/ProjectId/SectionInfoProject";
 import { SectionPreviws } from "../../components/ProjectId/SectionPreviws";
 import { useEffect } from "react";
+import { ContactSection } from "../../components/ContactSection";
 
 export function ProjectId() {
 
@@ -12,26 +13,31 @@ export function ProjectId() {
 
     const currentProject = projects.find((project) => project.id === Number(id));
 
-    useEffect(()=>{
+    useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
 
     return (
-        <ContainerProjectId>
-            <img src={currentProject!.cover} alt="project-cover" />
+        <>
+            <ContainerProjectId>
+                <img src={currentProject!.cover} alt="project-cover" />
 
-            <SectionSumary 
-            title={currentProject!.tittle} 
-            description={currentProject!.description}
-            tecnologies={currentProject!.tecnologies} 
-            areas={currentProject!.areas} />
+                <SectionSumary
+                    title={currentProject!.tittle}
+                    description={currentProject!.description}
+                    tecnologies={currentProject!.tecnologies}
+                    areas={currentProject!.areas}
+                    link={currentProject!.link} />
 
-            <SectionInfoProject
-            detail={currentProject!.detail} />
+                <SectionInfoProject
+                    detail={currentProject!.detail} />
 
-            <SectionPreviws
-            previews={currentProject!.previws}
-             />
-        </ContainerProjectId>
+                <SectionPreviws
+                    previews={currentProject!.previws}
+                />
+            </ContainerProjectId>
+
+            <ContactSection />
+        </>
     )
 }

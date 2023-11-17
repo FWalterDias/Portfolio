@@ -17,6 +17,7 @@ export type ButtonProps = {
     navigateTo?: string
     link?: string
     modal?:boolean
+    about?: boolean
 }
 
 export type TechnologiesProps = {
@@ -60,6 +61,7 @@ export type SectionSumaryProps = {
     description: string,
     tecnologies: string[],
     areas: string[]
+    link: string
 }
 
 export type SectionInfoProjectProps = {
@@ -98,3 +100,7 @@ export type ErrorProviderProps = {
 export type ErrorMensageProps = {
     text: string
 }
+
+export type RefAboutProviderProps = {
+    children: ReactNode;
+};

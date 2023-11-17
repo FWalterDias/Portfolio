@@ -20,8 +20,8 @@ export function Footer(){
                 </Link>
             </ContainerLinkContatc>
             <ContainerLinkContatc>
-                <img src={iconWhatsApp} alt="icon-whatsapp" />
-                <Link to="">
+                <img src={iconWhatsApp} alt="icon-whatsapp"/>
+                <Link to="https://wa.me/5588992820424" target="_blank">
                     (88) 99282-0424
                 </Link>
             </ContainerLinkContatc>

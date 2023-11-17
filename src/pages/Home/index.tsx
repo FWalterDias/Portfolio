@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import { ContactSection } from "../../components/ContactSection";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { ContainerHome } from "./styles";
@@ -10,7 +9,6 @@ export function App() {
         <ContainerHome>
             <Header />
             <Outlet />
-            <ContactSection />
             <Footer />
             <Modal />
         </ContainerHome>

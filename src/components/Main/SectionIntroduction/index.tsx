@@ -1,6 +1,6 @@
-import { ContainerIntroduction, ContainerTextIntroduction } from "./styles";
 import imgIntroduction from "../../../assets/Home/Tecnologias-apresentacao.svg";
 import { Button } from "../../../components/Button";
+import { ContainerIntroduction, ContainerTextIntroduction } from "./styles";
 
 export function SectionIntroduction() {
     return (
@@ -12,7 +12,7 @@ export function SectionIntroduction() {
                     Olá, me chamo Francisco Walter,e sou desenvolvedor Full-Stack Junior
                 </h2>
 
-                <Button text="Sobre mim" width="small" style="transparent" />
+                <Button text="Sobre mim" width="small" style="transparent" about />
             </ContainerTextIntroduction>
         </ContainerIntroduction>
     )

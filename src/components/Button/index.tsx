@@ -1,13 +1,15 @@
-import { useNavigate } from "react-router-dom";
-import { ButtonProps } from "../../types/types"
-import { ContainerButton } from "./styles"
-import { ModalContext } from "../../contexts/Modalcontext";
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { ModalContext } from "../../contexts/Modalcontext";
+import { ButtonProps } from "../../types/types";
+import { ContainerButton } from "./styles";
+import { RefAboutContext } from "../../contexts/RefAbout";
 
-export function Button({ text, style, width, img, navigateTo, link, modal }: ButtonProps) {
+export function Button({ text, style, width, img, navigateTo, link, modal, about }: ButtonProps) {
 
-    const modalContext = useContext(ModalContext)
+    const refAbout = useContext(RefAboutContext);
+
+    const modalContext = useContext(ModalContext);
 
     const navigate = useNavigate();
 
@@ -18,7 +20,15 @@ export function Button({ text, style, width, img, navigateTo, link, modal }: But
 
         if(modal) return modalContext.setModalOpen(true);
 
-        if(link) return <Link to={link} />
+        if(link) return window.open(link, "_blank");
+
+        if(about) {
+            if (refAbout && refAbout.current) {
+                console.log(refAbout);
+                
+                refAbout.current.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
     }
 
 

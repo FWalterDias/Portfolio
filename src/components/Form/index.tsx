@@ -4,6 +4,8 @@ import { ContainerForm, InputWrapper } from "./styles";
 import { ButtonForm } from "../ButtonForm";
 import { ErrorMensage } from "../ErrorMensage";
 import { ErrorsContext } from "../../contexts/ShowError";
+import emailjs from "@emailjs/browser"
+import { toast, Toaster } from 'react-hot-toast';
 
 export function Form({ formContato }: FormComponentProps) {
 
@@ -40,13 +42,33 @@ export function Form({ formContato }: FormComponentProps) {
             
             return;
         }
+
+        try {
+            const templateParams = {
+                from_name: form.name,
+                email: form.email,
+                message: form.mensage
+            }
+    
+            await emailjs.send("service_8rnhrac", "template_prta00h", templateParams, "KdDtpZBtIXBKaZSoh");
+    
+            setForm({
+                name: "",
+                email: "",
+                mensage: ""
+            })
+    
+            return toast.success('Mensagem enviada com sucesso!');
+        } catch (error) {
+            return toast.error("Não foi possível enviar sua mensagem")
+        }
     }
 
     return (
         <ContainerForm onSubmit={handleSendForm}>
             <fieldset>
                 <legend
-                    className={formContato ? "legend-form-contato" : ""}>
+                    className={formContato ? "form-contact" : ""}>
                     {formContato ? "Envie-me uma mensagem" : "Preencha os campos abaixo"}
                 </legend>
 
@@ -86,6 +108,10 @@ export function Form({ formContato }: FormComponentProps) {
             </fieldset>
 
             <ButtonForm width="biggest" />
+
+            <Toaster toastOptions={{
+                duration: 3000
+            }} />
         </ContainerForm>
     )
 }

@@ -2,7 +2,7 @@ import { SectionSumaryProps } from "../../../types/types"
 import { Button } from "../../Button"
 import { ContainerSumary, SectionInfoProject, Technologies, Area } from "./styles"
 
-export function SectionSumary({ title, description, tecnologies, areas }: SectionSumaryProps) {
+export function SectionSumary({ title, description, tecnologies, areas, link }: SectionSumaryProps) {
     return (
         <ContainerSumary>
             <h2>
@@ -39,8 +39,9 @@ export function SectionSumary({ title, description, tecnologies, areas }: Sectio
 
             <Button
                 text="Ir para projeto"
-                type="normal"
+                style="normal"
                 width="biggest"
+                link={link}
             />
         </ContainerSumary>
     )

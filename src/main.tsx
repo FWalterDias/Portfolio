@@ -7,18 +7,21 @@ import GlobalStyle from './styles/globalStyle';
 import theme from "./styles/themes";
 import { ErrorProvider } from "./contexts/ShowError";
 import { ModalProvider } from "./contexts/Modalcontext";
+import { RefAboutProvider } from "./contexts/RefAbout";
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ErrorProvider>
       <ModalProvider>
-        <BrowserRouter>
-          <ThemeProvider theme={theme}>
-            <GlobalStyle />
-            <MainRouts />
-          </ThemeProvider>
-        </BrowserRouter>
+        <RefAboutProvider>
+          <BrowserRouter>
+            <ThemeProvider theme={theme}>
+              <GlobalStyle />
+              <MainRouts />
+            </ThemeProvider>
+          </BrowserRouter>
+        </RefAboutProvider>
       </ModalProvider>
     </ErrorProvider>
   </React.StrictMode>,
