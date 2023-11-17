@@ -19,8 +19,12 @@ export const ContainerButton = styled.button`
     letter-spacing: .2rem;
     text-transform: uppercase; 
 
+    img{
+        width: 2.5rem;
+    }
+
     &.small{
-        width: 13rem;
+        width: 14rem;
     }
 
     &.biggest{

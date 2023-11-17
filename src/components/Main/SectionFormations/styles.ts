@@ -14,8 +14,6 @@ export const ContainerFormations = styled.section`
     background-color: ${({ theme }) => theme.DARK.COLORS.DARK_BLUE};
     box-shadow: .5rem .5rem 1rem 0 #000; 
     border-radius: .5rem;
-
-    
 `
 
 export const SectionTittleFormations = styled.div`

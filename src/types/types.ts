@@ -26,3 +26,9 @@ export type CardTechnologyProps = {
     srcIcone: string,
     textTecnology: string
 }
+
+export type CoursesProps = {
+    id: number,
+    img: string,
+    name: string
+}

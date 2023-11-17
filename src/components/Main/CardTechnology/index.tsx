@@ -1,3 +1,4 @@
+
 import { CardTechnologyProps } from "../../../types/types.js"
 import { ContainerCardTecnology } from "./styles.js"
 

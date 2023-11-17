@@ -1,6 +1,8 @@
-import { SectionFormations } from "./SectionFormations";
-import { SectionHardSkills } from "./SectionHardSkills/indext";
-import { SectionIntroduction } from "./SectionIntroduction";
+
+import { SectionCourses } from "../../components/Main/SectionCourses";
+import { SectionFormations } from "../../components/Main/SectionFormations";
+import { SectionHardSkills } from "../../components/Main/SectionHardSkills/indext";
+import { SectionIntroduction } from "../../components/Main/SectionIntroduction";
 import { ContainerMain } from "./styles";
 
 export function Main() {
@@ -9,6 +11,7 @@ export function Main() {
             <SectionIntroduction />
             <SectionHardSkills />
             <SectionFormations />
+            <SectionCourses />
         </ContainerMain>
     )
 }
