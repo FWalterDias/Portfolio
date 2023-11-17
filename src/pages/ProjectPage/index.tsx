@@ -5,6 +5,9 @@ import { useEffect } from "react";
 
 export function ProjectPage(){
 
+    const projectsInverse = [...projects];
+    projectsInverse.sort((a, b) => b.id - a.id);
+
     useEffect(()=>{
         window.scrollTo(0, 0)
     }, []);
@@ -12,15 +15,14 @@ export function ProjectPage(){
     return(
         <ContainerProjectPage>
             {
-                projects
-                .sort((a, b) => b.id - a.id)
+                projectsInverse
                 .map((project) => (
                     <CardProject 
                         key={project.id}
                         id={project.id}
-                        img={project.capa}
-                        title={project.titulo}
-                        description={project.descricao}
+                        img={project.cover}
+                        title={project.tittle}
+                        description={project.description}
                     />
                 ))
             }

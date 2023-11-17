@@ -43,12 +43,27 @@ export type CardProjectProps = {
 
 export type ProjectsProps = {
     id: number;
-    titulo: string;
-    descricao: string;
-    detalhes: string;
-    capa: string;
+    tittle: string;
+    description: string;
+    detail: string;
+    cover: string;
     previws: string[];
-    tecnologias: string[];
-    area: string[];
+    tecnologies: string[];
+    areas: string[];
     link: string;
+}
+
+export type SectionSumaryProps = {
+    title: string,
+    description: string,
+    tecnologies: string[],
+    areas: string[]
+}
+
+export type SectionInfoProjectProps = {
+    detail: string
+}
+
+export type SectionPreviwsProps = {
+    previews: string[],
 }

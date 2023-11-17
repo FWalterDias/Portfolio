@@ -10,7 +10,7 @@ export function CardProject({ id, img, title, description }: CardProjectProps) {
             <ContainerDescription>
                 <h3>
                     {title}
-                </h3>
+                </h3> 
 
                 <p>
                     {description}
