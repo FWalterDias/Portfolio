@@ -1,12 +1,29 @@
-import { useParams } from "react-router-dom";
+import { CardProject } from "../../components/CardProject";
+import { ContainerProjectPage } from "./styles";
+import { projects } from "../../database/dateProjects";
+import { useEffect } from "react";
 
 export function ProjectPage(){
 
-    const { id } = useParams();
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    }, []);
 
-    console.log(id);
-    
     return(
-        <h1>Pagina do projeto {id}</h1>
+        <ContainerProjectPage>
+            {
+                projects
+                .sort((a, b) => b.id - a.id)
+                .map((project) => (
+                    <CardProject 
+                        key={project.id}
+                        id={project.id}
+                        img={project.capa}
+                        title={project.titulo}
+                        description={project.descricao}
+                    />
+                ))
+            }
+        </ContainerProjectPage>
     )
 }

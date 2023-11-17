@@ -14,6 +14,7 @@ export type ButtonProps = {
     type: "normal" | "transparent"
     width: "small" | "biggest"
     img?: string
+    navigateTo?: string
 }
 
 export type TechnologiesProps = {
@@ -31,4 +32,23 @@ export type CoursesProps = {
     id: number,
     img: string,
     name: string
+}
+
+export type CardProjectProps = {
+    id:number,
+    img: string,
+    title: string,
+    description: string
+}
+
+export type ProjectsProps = {
+    id: number;
+    titulo: string;
+    descricao: string;
+    detalhes: string;
+    capa: string;
+    previws: string[];
+    tecnologias: string[];
+    area: string[];
+    link: string;
 }

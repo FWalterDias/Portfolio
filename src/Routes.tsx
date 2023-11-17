@@ -1,9 +1,9 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Projects } from "./pages/Projects";
+import { ProjectPage } from "./pages/ProjectPage";
 import { Contact } from "./pages/Contact";
 import { App } from "./pages/Home";
 import { Main } from "./pages/Main";
-import { ProjectPage } from "./pages/ProjectPage";
+import { ProjectId } from "./pages/ProjectId";
 import { NotFound } from "./pages/NotFound";
 
 export function MainRouts() {
@@ -17,8 +17,8 @@ export function MainRouts() {
       </Route>
 
       <Route path="/projects" element={<App />} >
-        <Route path="" element={<Projects />} />
-        <Route path=":id" element={<ProjectPage />} />
+        <Route path="" element={<ProjectPage />} />
+        <Route path=":id" element={<ProjectId />} />
       </Route>
 
       <Route path="/contact" element={<App />} >
