@@ -33,7 +33,7 @@ export function SectionCourses() {
     };
 
     useEffect(() => {
-        const interval = setInterval(nextImg, 3500);
+        const interval = setInterval(nextImg, 5000);
 
         return () => clearInterval(interval);
     }, []);

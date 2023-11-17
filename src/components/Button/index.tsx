@@ -7,7 +7,7 @@ export function Button({ text, type, width, img }: ButtonProps) {
 
     return (
         <ContainerButton className={buttonClasses}>
-            <p>{text}</p>
+            <span>{text}</span>
             {img && <img src={img} alt="img-button" />}
         </ContainerButton>
     )

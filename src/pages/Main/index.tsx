@@ -1,4 +1,4 @@
-
+import { SectionAboutMe } from "../../components/Main/SectionAboutMe";
 import { SectionCourses } from "../../components/Main/SectionCourses";
 import { SectionFormations } from "../../components/Main/SectionFormations";
 import { SectionHardSkills } from "../../components/Main/SectionHardSkills/indext";
@@ -12,6 +12,7 @@ export function Main() {
             <SectionHardSkills />
             <SectionFormations />
             <SectionCourses />
+            <SectionAboutMe />
         </ContainerMain>
     )
 }
