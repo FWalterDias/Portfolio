@@ -6,6 +6,7 @@ export default{
             LIGHT_WHITE: "#FAFAFA",
             DARK_BLUE: "#08080B",
             GRAY: "#D8D8D8",
+            LIGHT_GRAY: "#979797",
             CYAN: "#00BFA6",
             LIGHT_CYAN: "#2DFFC4",
             RED: "#E70000"
