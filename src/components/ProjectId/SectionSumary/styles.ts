@@ -50,7 +50,7 @@ export const ContainerSumary = styled.section`
     }
 
     button{
-        margin-top: 6rem;
+        margin: 6rem 0;
     }
 
     @media (min-width: 1200px) {
