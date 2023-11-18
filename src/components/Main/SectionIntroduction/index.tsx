@@ -12,7 +12,7 @@ export function SectionIntroduction() {
                     Olá, me chamo Francisco Walter,e sou desenvolvedor Full-Stack Junior
                 </h2>
 
-                <Button text="Sobre mim" width="small" style="transparent" about />
+                <Button text="Sobre mim" width="biggest" style="transparent" about />
             </ContainerTextIntroduction>
         </ContainerIntroduction>
     )

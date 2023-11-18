@@ -35,7 +35,7 @@ export const ContainerTextIntroduction = styled.div`
     width: 100%;
 
     h2{
-        width: 100%;
+        width: 60%;
         color: ${({ theme }) => theme.DARK.COLORS.LIGHT_WHITE};
         font-size: 2.4rem;
         font-weight: 500;
@@ -49,10 +49,16 @@ export const ContainerTextIntroduction = styled.div`
         gap: 3rem;
 
         width: 50%;
-
+        
         h2{
-            font-size: 5rem; 
+            width: 100%;
             line-height: 5rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        h2{
+            font-size: 5rem;   
         }
     }
 `
