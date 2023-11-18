@@ -14,10 +14,13 @@ export const ContainerHeader = styled.header`
 
 export const ContainerSocialMedias = styled.div`
     display: flex;
+    align-self: center;
     gap: 1rem;
 
     img{
         cursor: pointer;
+        width: 2rem;
+        height: 2rem; 
     }
     
     a{
@@ -34,6 +37,12 @@ export const ContainerSocialMedias = styled.div`
 
     @media (min-width:760px){
         gap: 3rem;
+
+        img{
+            width: 3rem;
+                height: 3rem; 
+        }
+
         a{
             img{
                 width: 3rem;
