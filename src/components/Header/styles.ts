@@ -16,6 +16,9 @@ export const ContainerSocialMedias = styled.div`
     display: flex;
     gap: 1rem;
 
+    img{
+        cursor: pointer;
+    }
     
     a{
         img{
