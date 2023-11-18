@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeInContainersProjectId = keyframes`
+    0% {
+        transform: scaleX(0.4);
+        transform-origin: 0% 0%;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: 0% 0%;
+    }
+`
 
 export const ContainerDetailProject = styled.section`
     display: flex;
@@ -8,6 +19,8 @@ export const ContainerDetailProject = styled.section`
     width: 100%;
 
     margin-top: 5rem;
+
+    animation: ${fadeInContainersProjectId} 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
     h2{
         color: ${({ theme }) => theme.DARK.COLORS.WHITE};
@@ -26,5 +39,10 @@ export const ContainerDetailProject = styled.section`
         font-weight: 400;
         line-height: 3rem;
         opacity: 0.8;
+    }
+
+    @media (min-width: 1200px) {
+        grid-area: sectionInfo;
+        padding-right: 2rem;
     }
 `

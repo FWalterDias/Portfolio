@@ -40,6 +40,7 @@ export const ContainerCardProject = styled.div`
             animation: ${appearRight} .3s ease-in-out;
         }
     }
+
     @media (min-width: 1200px) {
         margin-top: 5rem;
     }
@@ -78,5 +79,9 @@ export const ContainerDescription = styled.div`
 
     @media (min-width: 760px) {
         width: 50%;
+
+        h3{
+            font-size: 4rem;
+        }
     }
 `

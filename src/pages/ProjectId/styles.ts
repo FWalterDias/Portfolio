@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeInImgProjectId = keyframes`
+  0% {
+        transform: scaleY(0.4);
+  }
+  100% {
+    
+        transform: scaleY(1);
+  }
+`
 
 export const ContainerProjectId = styled.div`
     display: flex;
@@ -9,8 +19,23 @@ export const ContainerProjectId = styled.div`
     margin-top: 5rem;
 
     img{
-        min-width: min(32rem, 100%);
-        max-width: 70%;
+        width: 100%;
+        max-width: 95rem;
         align-self: center;
+        animation: ${fadeInImgProjectId} 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-areas: 
+        "img img img"
+        "sectionSumary sectionInfo sectionInfo"
+        "sectionSumary sectionPreview sectionPreview";
+        column-gap: 5rem;
+
+        img{
+            grid-area: img;
+            margin: 0 auto;
+        }
     }
 `
