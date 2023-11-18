@@ -33,7 +33,7 @@ export function SectionCourses() {
     };
 
     useEffect(() => {
-        const interval = setInterval(nextImg, 5000);
+        const interval = setInterval(nextImg, 8000);
 
         return () => clearInterval(interval);
     }, []);
@@ -41,7 +41,6 @@ export function SectionCourses() {
     const handleRadioChange = (index: number) => {
         setCount(index);
     };
-
 
     return (
         <ContainerCourses>

@@ -20,4 +20,19 @@ export const ContainerContactSection = styled.div`
         line-height: 4.2rem; 
         letter-spacing: -0.357px; 
     }
+
+    @media (min-width: 760px){
+        justify-content: space-between;
+
+        h1{
+            font-size: 4rem;
+            text-align: left;
+        }
+    }
+
+    @media (min-width: 1200px){
+        h1{
+            width: 40%;
+        }
+    }
 `

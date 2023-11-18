@@ -30,6 +30,7 @@ export const ContainerSocialMedias = styled.div`
     }
 
     @media (min-width:760px){
+        gap: 3rem;
         a{
             img{
                 width: 3rem;
@@ -69,6 +70,10 @@ export const ContainerNav = styled.nav`
 
     @media (min-width: 760px){
         font-size: 1.6rem;
+
+        ul{
+            gap: 3rem;
+        }
     }
 
 `

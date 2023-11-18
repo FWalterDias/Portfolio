@@ -8,13 +8,19 @@ export const ContainerFooter = styled.footer`
     width: 100%;
 
     margin-top: 8rem;
+
+    @media (min-width: 760px) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-top: 20rem;
+    }
 `
 
 export const ContainerLinkContatc = styled.div`
     display: flex;
+    align-items: center;
     gap: 1.3rem;
-
-    width: 100%;
 
     a{  
         color: ${({theme}) => theme.DARK.COLORS.WHITE};
