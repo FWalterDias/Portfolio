@@ -1,27 +1,49 @@
-# React + TypeScript + Vite
+# Portfólio - Francisco Walter Dias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o primeiro projeto oficial do meu portfólio, desenvolvido com base em um design criado no Figma. O projeto foi construído utilizando React.JS, styled-components, TypeScript e outras bibliotecas.
 
-Currently, two official plugins are available:
+## Visão Geral
+O projeto foi concebido com o conceito de Mobile First, priorizando o desenvolvimento para dispositivos móveis antes de adaptar para desktop. Embora o resultado final não seja completamente fiel ao design inicial do Figma, as mudanças foram progressivas e não alteraram drasticamente a visão inicial.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+- TypeScript
+- React
+- styled-components
+- Node.js
+- Bibliotecas:
+  - react-router-dom
+  - react-hot-toast
+  - emailJs
+ 
+## Experiência e Desenvolvimento
+Utilizando TypeScript, React, e styled-components, o projeto foi desenvolvido com foco em design responsivo desde o início. O uso de Hooks como useState, useRef, e useContext, além do React-Router para a navegação entre páginas, permitiu uma gestão eficiente dos estados e das rotas.
 
-## Expanding the ESLint configuration
+A biblioteca React-Hot-Toast foi empregada para exibir pop-ups, enquanto o emailJs foi utilizado para a funcionalidade de envio de e-mails de contato diretamente para minha caixa de entrada pessoal.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Este projeto também serviu como plataforma para aprimorar minhas habilidades com TypeScript, proporcionando um ambiente para a prática e correção de erros durante o desenvolvimento do código.
 
-- Configure the top-level `parserOptions` property like this:
+## Projetos no Portfólio
+Os projetos apresentados no portfólio foram desenvolvidos durante minha formação na Cubos Academy e na Rocketseat. A seleção destes projetos foi baseada na relevância e importância, embora nem todos estejam completamente responsivos no momento.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Depoy
+A aplicação foi implantada na Vercel para garantir sua disponibilidade online.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Contato
+Para mais informações ou contato, sinta-se à vontade para me <a href="https://wa.me/5588992820424">Contatar</a> diretamente.
+
+# Previwes
+
+## Home
+![home](https://github.com/FWalterDias/Portfolio/assets/100762742/b5efb747-bade-42f4-ba64-9d0d4a5f43c5)
+
+## Projetos
+![projects](https://github.com/FWalterDias/Portfolio/assets/100762742/0bc2a19f-d7bc-4dd1-9f32-986fdbe66e1f)
+
+## Projeto
+![projectId](https://github.com/FWalterDias/Portfolio/assets/100762742/1db1a26a-bd21-4e5c-b01a-dd109d8b3b9f)
+
+## Contato
+![contact](https://github.com/FWalterDias/Portfolio/assets/100762742/d781592a-380e-4148-ab1d-49a5ec96587e)
+
+## Modal 
+![modal](https://github.com/FWalterDias/Portfolio/assets/100762742/ec689561-4e67-4520-9632-bc865cdf56d4)
