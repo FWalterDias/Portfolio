@@ -5,7 +5,8 @@ export const ContainerCardTecnology = styled.div`
     align-items: center;
     gap: .5rem;
 
-    width: 10rem;
+    width: max(10rem, 100%);
+    max-width: 20rem;
     height: 4rem;
 
     padding-left: .9rem;
@@ -17,13 +18,15 @@ export const ContainerCardTecnology = styled.div`
 
     cursor: pointer;
 
+    transition: all .2s ease-in-out;
+
     &:hover{
         box-shadow: 0px 0px 10px 0px #2DFFC4; 
     }
 
     img{
         width: 2.5rem;
-        height: 2.5rem;
+        height:  2.5rem;
     }
 
     strong{
@@ -34,5 +37,13 @@ export const ContainerCardTecnology = styled.div`
         font-weight: 700;
         letter-spacing: -0.446px;
         text-transform: capitalize; 
+    }
+    @media (min-width: 760px) {
+        height: 5rem;
+
+        img{
+            width: 4rem;
+            height:  4rem;
+        }
     }
 `

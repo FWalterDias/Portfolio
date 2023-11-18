@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContainerHardSkills = styled.section`
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 
     width: 100%;
@@ -18,15 +19,23 @@ export const SectionTittle = styled.div`
 
     h1{
         color: ${({ theme }) => theme.DARK.COLORS.WHITE};
+        font-size: 3.2rem; 
+        font-style: italic;
         font-weight: 500;
         line-height: 5rem;
         letter-spacing: -0.446px;
-        text-transform: uppercase; 
+        text-transform: uppercase;  
     }
 
     img{
         width: 3rem;
         height: 3rem;
+    }
+
+    @media (min-width: 760px){
+        h1{
+            font-size: 4rem; 
+        }
     }
 `
 
@@ -37,4 +46,8 @@ export const ContainerCardAllTechnologies = styled.div`
     justify-items: center;
 
     width: 100%;
+
+    @media (min-width: 760px){
+        width: 80%;
+    }
 `
