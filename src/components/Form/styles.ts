@@ -4,6 +4,7 @@ export const ContainerForm = styled.form`
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 60rem;
 
     font-family: "Roboto Condensed";
     gap: 7rem;
