@@ -16,7 +16,7 @@ export const ContainerSumary = styled.section`
     flex-direction: column;
 
     width: 100%;
-    max-height: 50rem;
+    max-height: 55rem;
 
     text-align: justify;
 

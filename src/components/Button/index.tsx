@@ -48,7 +48,8 @@ export function Button({ text, style, width, img, navigateTo, link, modal, about
             const link = document.createElement('a');
             link.href = url;
             link.setAttribute('download', 'Francisco_Walter.pdf');
-
+            link.style.display = "none";
+            
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
