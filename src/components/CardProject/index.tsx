@@ -4,7 +4,7 @@ import { ContainerCardProject, ContainerDescription } from "./styles";
 
 export function CardProject({ id, img, title, description }: CardProjectProps) {
     return (
-        <ContainerCardProject className={id % 2 !== 0 ? "impar" : ""}>
+        <ContainerCardProject className={id % 2 === 0 ? "even" : ""}>
             <img src={img} alt="img-card-project" />
 
             <ContainerDescription>

@@ -1,19 +1,55 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearLeft = keyframes`
+    from{
+        transform: translateX(-50%);
+        opacity: .1;
+    }
+`
+
+const appearRight = keyframes`
+    from{
+        transform: translateX(50%);
+        opacity: .1;
+    }
+`
 
 export const ContainerCardProject = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 
+    animation: ${appearLeft} .3s ease-in-out;
+
+
     img{
-        min-width: min(32.5rem, 100%);
-        max-width: 55rem;
+        width: min(55rem, 100%);
+        object-fit: contain;
+    }
+
+    @media (min-width: 760px) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        img{
+            width: 50%;
+        }
+
+        &.even{
+            flex-direction: row-reverse;
+            animation: ${appearRight} .3s ease-in-out;
+        }
+    }
+    @media (min-width: 1200px) {
+        margin-top: 5rem;
     }
 `
 export const ContainerDescription = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2.8rem;
+
+    max-width: 40rem;
 
     padding: 3.7rem 0 6rem;
 
@@ -38,5 +74,9 @@ export const ContainerDescription = styled.div`
         font-weight: 400;
         line-height: 3rem; 
         opacity: .8;
+    }
+
+    @media (min-width: 760px) {
+        width: 50%;
     }
 `
