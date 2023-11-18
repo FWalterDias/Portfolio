@@ -4,7 +4,7 @@ import iconEstacio from "../../../assets/Icons/estacio.png";
 import iconFormations from "../../../assets/Icons/graduation-cap-fill.svg";
 import { Button } from "../../../components/Button";
 import { ContainerFormations, SectionNameFormation, SectionTittleFormations } from "./styles";
-
+import curriculo from "../../../assets/Downloads/curriculo.pdf"
 export function SectionFormations() {
     return (
         <ContainerFormations>
@@ -33,7 +33,8 @@ export function SectionFormations() {
             text="Curriculo" 
             style="transparent" 
             width="small"
-            img={iconCurriculo}  />
+            img={iconCurriculo}
+            download={curriculo}  />
         </ContainerFormations>
     )
 }

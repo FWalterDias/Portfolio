@@ -18,6 +18,7 @@ export type ButtonProps = {
     link?: string
     modal?:boolean
     about?: boolean
+    download?: string
 }
 
 export type TechnologiesProps = {
@@ -34,7 +35,8 @@ export type CardTechnologyProps = {
 export type CoursesProps = {
     id: number,
     img: string,
-    name: string
+    name: string,
+    link: string
 }
 
 export type CardProjectProps = {

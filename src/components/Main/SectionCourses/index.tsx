@@ -76,7 +76,8 @@ export function SectionCourses() {
                                         text="Certificado"
                                         style="transparent"
                                         width="small"
-                                        img={imgCertifier} />
+                                        img={imgCertifier}
+                                        download={course.link} />
                                 </Course>
                             ))
                     }
