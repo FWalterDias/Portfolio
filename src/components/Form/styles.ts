@@ -7,7 +7,7 @@ export const ContainerForm = styled.form`
     max-width: 60rem;
 
     font-family: "Roboto Condensed";
-    gap: 7rem;
+    gap: 4rem;
 
     fieldset{
         border: none;

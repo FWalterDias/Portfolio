@@ -2,14 +2,14 @@ import styled, { keyframes } from "styled-components";
 
 const appearLeft = keyframes`
     from{
-        transform: translateX(-50%);
+        transform: translateX(-10%);
         opacity: .1;
     }
 `
 
 const appearRight = keyframes`
     from{
-        transform: translateX(50%);
+        transform: translateX(10%);
         opacity: .1;
     }
 `
@@ -19,7 +19,7 @@ export const ContainerCardProject = styled.div`
     flex-direction: column;
     gap: 2.5rem;
 
-    animation: ${appearLeft} .3s ease-in-out;
+    animation: ${appearLeft} .5s ease-in-out;
 
 
     img{
@@ -37,7 +37,7 @@ export const ContainerCardProject = styled.div`
 
         &.even{
             flex-direction: row-reverse;
-            animation: ${appearRight} .3s ease-in-out;
+            animation: ${appearRight} .5s ease-in-out;
         }
     }
 

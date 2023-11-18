@@ -26,7 +26,7 @@ export const ContainerModal = styled.div`
     color: #000000;
     border-radius: 1rem;
 
-    padding: 6rem 3rem;
+    padding: 6rem 3rem 3rem;
 
     img{
         position: absolute;
