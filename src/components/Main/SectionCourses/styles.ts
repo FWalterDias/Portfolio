@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContainerCourses = styled.section`
     width: 100%;
+    max-width: 50rem;
 
     padding: 1rem 1rem 3rem;
 
@@ -12,6 +13,11 @@ export const ContainerCourses = styled.section`
     border-radius: .5rem;
 
     position: relative;
+
+    @media(min-width: 760px){
+        padding: 2rem 4rem;
+        height: 40rem;
+    }
 `
 
 export const SectionTittleCourses = styled.div`
@@ -22,7 +28,7 @@ export const SectionTittleCourses = styled.div`
 
     color: ${({ theme }) => theme.DARK.COLORS.WHITE};
     text-align: center;
-    font-size: 3%.2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 5rem;
     letter-spacing: -0.446px;
@@ -34,6 +40,7 @@ export const ContainerSlides = styled.div`
     flex-direction: column;
 
     width: 100%;
+    
     padding-top: 2rem;
 
     overflow: hidden;
@@ -88,10 +95,11 @@ export const Course = styled.div`
     align-items: center;
 
     width: 33.24%;
+    height: 100%;
     transition: all .5s ease-in-out;
 
     img:first-child{
-        width: 80%;
+        width: 20rem;
         object-fit: contain;
     }
 
@@ -107,7 +115,7 @@ export const Course = styled.div`
     }
 
     button{
-        margin: 3rem auto;
+        margin: 3rem 0;
     }
 `
 

@@ -38,12 +38,17 @@ export const ContainerCardTecnology = styled.div`
         letter-spacing: -0.446px;
         text-transform: capitalize; 
     }
+
     @media (min-width: 760px) {
         height: 5rem;
 
         img{
             width: 4rem;
             height:  4rem;
+        }
+
+        strong{
+            font-size: 2rem;
         }
     }
 `

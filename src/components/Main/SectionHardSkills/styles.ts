@@ -46,8 +46,4 @@ export const ContainerCardAllTechnologies = styled.div`
     justify-items: center;
 
     width: 100%;
-
-    @media (min-width: 760px){
-        width: 80%;
-    }
 `

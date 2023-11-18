@@ -6,6 +6,7 @@ export const ContainerFormations = styled.section`
     align-items: center;
 
     width: 100%;
+    max-width: 50rem;
 
     padding: 1rem 1rem 3rem;
 
@@ -14,6 +15,16 @@ export const ContainerFormations = styled.section`
     background-color: ${({ theme }) => theme.DARK.COLORS.DARK_BLUE};
     box-shadow: .5rem .5rem 1rem 0 #000; 
     border-radius: .5rem;
+
+    
+    @media (min-width: 760px) {
+        padding: 2rem 4rem;
+        height: 40rem;
+
+        button{
+            margin-top: 3rem;
+        }
+    }
 `
 
 export const SectionTittleFormations = styled.div`
@@ -24,7 +35,7 @@ export const SectionTittleFormations = styled.div`
 
     color: ${({ theme }) => theme.DARK.COLORS.WHITE};
     text-align: center;
-    font-size: 3%.2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 5rem;
     letter-spacing: -0.446px;
@@ -39,7 +50,7 @@ export const SectionNameFormation = styled.div`
 
     padding: 2.5rem 1rem;
 
-    color: ${({ theme }) => theme.DARK.COLORS.LIGHT_WHITE};
+    color: ${({ theme }) => theme.DARK.COLORS.GRAY};
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 500;
@@ -53,5 +64,9 @@ export const SectionNameFormation = styled.div`
 
     &:nth-child(2){
         border-bottom: solid 1px rgba(151, 151, 151, 0.50);
+    }
+
+    @media (min-width: 760px){
+        font-size: 2.4rem;
     }
 `
