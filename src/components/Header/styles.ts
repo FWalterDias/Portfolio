@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContainerHeader = styled.header`
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     width: 100%;
@@ -27,6 +28,15 @@ export const ContainerSocialMedias = styled.div`
             }
         }
     }
+
+    @media (min-width:760px){
+        a{
+            img{
+                width: 3rem;
+                height: 3rem; 
+            }
+        }
+    }
 `
 
 export const ContainerNav = styled.nav`
@@ -45,7 +55,7 @@ export const ContainerNav = styled.nav`
 
             a{
                 &:hover{
-                    color: ${({theme}) => theme.DARK.COLORS.CYAN};
+                    color: ${({ theme }) => theme.DARK.COLORS.CYAN};
                     opacity: .9;
                 }
 
@@ -57,6 +67,8 @@ export const ContainerNav = styled.nav`
         }
     }
 
-    
+    @media (min-width: 760px){
+        font-size: 1.6rem;
+    }
 
 `
