@@ -43,6 +43,6 @@ export const ContainerDetailProject = styled.section`
 
     @media (min-width: 1200px) {
         grid-area: sectionInfo;
-        padding-right: 2rem;
+        padding-right: 10rem;
     }
 `

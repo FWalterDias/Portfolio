@@ -20,7 +20,6 @@ export const ContainerSumary = styled.section`
 
     text-align: justify;
 
-    padding-bottom: 3.7rem;
     border-bottom: solid 1px ${({ theme }) => theme.DARK.COLORS.GRAY};
 
     font-family: "Roboto Condensed", sans-serif;
