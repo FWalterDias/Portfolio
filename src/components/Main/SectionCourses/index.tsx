@@ -32,15 +32,16 @@ export function SectionCourses() {
         setCount((prevCount) => (prevCount - 1 + totalSlides) % totalSlides);
     };
 
+    const handleRadioChange = (index: number) => {
+        setCount(index);
+    };
+    
     useEffect(() => {
         const interval = setInterval(nextImg, 8000);
 
         return () => clearInterval(interval);
     }, []);
 
-    const handleRadioChange = (index: number) => {
-        setCount(index);
-    };
 
     return (
         <ContainerCourses>
