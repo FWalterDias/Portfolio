@@ -5,7 +5,7 @@ export const ContainerButton = styled.button`
     align-items: center;
     justify-content: space-evenly;
 
-    height: 5rem;
+    min-height: 5rem;
 
     background-color: ${({ theme }) => theme.DARK.COLORS.WHITE};
 
