@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 const fadeInContact = keyframes`
     from{
         scale: 0.95;
-        opacity: .2;
+        opacity: .8;
     }
 `
 
