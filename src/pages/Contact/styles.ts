@@ -13,6 +13,8 @@ export const ContainerContact = styled.div`
     align-items: center;
     gap: 4.4rem;
 
+    margin-top: 5rem;
+
     animation: ${fadeInContact} .5s ease-in-out;
 
     @media (min-width: 1200px) {
