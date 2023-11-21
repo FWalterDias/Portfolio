@@ -5,8 +5,14 @@ import iconWhatsApp from "../../assets/Links/whatsapp.svg"
 import { Link } from "react-router-dom";
 
 export function Footer(){
+
+    const currentPath = window.location.pathname;
+
+    console.log(currentPath);
+    
+
     return(
-        <ContainerFooter>
+        <ContainerFooter className={currentPath === "/contact" ? "no-margin" : ""}>
             <ContainerLinkContatc>
                 <img src={iconGithub} alt="icon-github" />
                 <Link to="https://github.com/FWalterDias" target="_blank">

@@ -13,7 +13,9 @@ export const ContainerFooter = styled.footer`
         flex-direction: row;
         justify-content: space-between;
 
-        margin-top: 20rem;
+        &.no-margin{
+            margin: 0;
+        }
     }
 `
 
